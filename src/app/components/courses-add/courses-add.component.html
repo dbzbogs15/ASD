@@ -1,0 +1,23 @@
+<form action="" method="POST" role="form">
+  <legend>Add Course</legend>
+
+  <button type="button" class="btn btn-danger"
+  [style.margin-bottom.px]="15" [routerLink]="[ '/courses' ]"><< Back</button>
+  <div class="form-group">
+    <label for="">Name</label>
+    <input type="text" class="form-control" [(ngModel)]="course.name" 
+    [ngModelOptions]="{standalone: true}">
+  </div>
+  <div class="form-group">
+    <label for="">Description</label>
+    <textarea class="form-control" rows="3" [(ngModel)]="course.description" 
+    [ngModelOptions]="{standalone: true}"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="">Price</label>
+  <input type="number" class="form-control" [(ngModel)]="course.fee" 
+  [ngModelOptions]="{standalone: true}">
+  </div>
+  <button type="submit" class="btn btn-primary" [style.margin-top.px]="15"
+  (click)="onAddCourse()">SAVE</button>
+</form>
