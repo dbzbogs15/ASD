@@ -7,7 +7,8 @@ import { Observable } from 'rxjs';
 })
 export class CoursesService {
 
-  public API = 'http://5bc74778cc83760013c1ccbc.mockapi.io/api/courses';
+  // public API = 'http://5bc74778cc83760013c1ccbc.mockapi.io/api/courses';
+  public API = 'http://localhost:8080';
 
   constructor(public http: HttpClient) { }
 
